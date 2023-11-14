@@ -14,9 +14,6 @@ const Neptunus = document.getElementById('Neptunus');
 const solarSystem = document.getElementById('solarSystem');
 
 
-//let earthPlanet;
-//let sunStar;
-
 
 async function getPlanets() {
     try {
@@ -87,7 +84,6 @@ function showSunInfo(sunStar) {
 Sun.addEventListener('click', function () {
     showSunInfo(sunStar);
 });
-
 
 
 
@@ -266,9 +262,9 @@ function showSaturnInfo(saturnPlanet) {
         <p class="hidden_text">Temperature daytime: ${saturnPlanet.temp.day}C</p>
         <p class="hidden_text">Temperature night time: ${saturnPlanet.temp.night}C</p>
         </div>
-        <div>
-        <p class="hidden_text">Moons: There are so many that they wouldn't fit in here!</p>
-        </div>
+        <article class="moon">
+        <p class="hidden_text">Moons: ${saturnPlanet.moons} </p>
+        <article class="moon">
     </article>
          `;
     solarSystem.innerHTML = planetInfo;
@@ -335,10 +331,10 @@ function showNeptunusInfo(neptunusPlanet){
         <p class="hidden_text">Temperature daytime: ${neptunusPlanet.temp.day}C</p>
         <p class="hidden_text">Temperature night time: ${neptunusPlanet.temp.night}C</p>
         </div>
-        <div>
+        <article class="moon">
         <p class="hidden_text">Moons: 
         ${neptunusPlanet.moons}</p>
-        </div>
+        </article>
     </article>
          `;
     solarSystem.innerHTML = planetInfo;
@@ -346,4 +342,3 @@ function showNeptunusInfo(neptunusPlanet){
 Neptunus.addEventListener('click', function () {
     showNeptunusInfo(neptunusPlanet);
 });
-
