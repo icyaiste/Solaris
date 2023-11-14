@@ -14,9 +14,6 @@ const Neptunus = document.getElementById('Neptunus');
 const solarSystem = document.getElementById('solarSystem');
 
 
-//let earthPlanet;
-//let sunStar;
-
 
 async function getPlanets() {
     try {
@@ -80,7 +77,7 @@ function showSunInfo(sunStar) {
         </div>
         <p class="hidden_text">Moons: ${sunStar.moons} - </p>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -111,7 +108,7 @@ function showEarthInfo(earthPlanet) {
         </div>
         <p class="hidden_text">Moons: ${earthPlanet.moons}</p>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -142,7 +139,7 @@ function showMercuryInfo(mercuryPlanet) {
         </div>
         <p class="hidden_text">Moons: ${mercuryPlanet.moons} -</p>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -174,7 +171,7 @@ function showVenusInfo(venusPlanet) {
         </div>
         <p class="hidden_text">Moons: ${venusPlanet.moons} -</p>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -206,7 +203,7 @@ function showMarsInfo(marsPlanet) {
         </div>
         <p class="hidden_text">Moons: ${marsPlanet.moons}</p>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -236,7 +233,7 @@ function showJupiterInfo(jupiterPlanet) {
         </div>
         <p class="hidden_text">Moons: ${jupiterPlanet.moons}</p>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 Jupiter.addEventListener('click', function () {
@@ -269,7 +266,7 @@ function showSaturnInfo(saturnPlanet) {
         <p class="hidden_text">Moons: ${saturnPlanet.moons} </p>
         <article class="moon">
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -303,7 +300,7 @@ function showUranusInfo(uranusPlanet){
         <p class="hidden_text">Moons: ${uranusPlanet.moons}</p>
         </div>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 
@@ -339,7 +336,7 @@ function showNeptunusInfo(neptunusPlanet){
         ${neptunusPlanet.moons}</p>
         </article>
     </article>
-         `;
+         `
     solarSystem.innerHTML = planetInfo;
 }
 Neptunus.addEventListener('click', function () {
