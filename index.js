@@ -14,10 +14,6 @@ const Neptunus = document.getElementById('Neptunus');
 const solarSystem = document.getElementById('solarSystem');
 
 
-//let earthPlanet;
-//let sunStar;
-
-
 async function getPlanets() {
     try {
         let response = await fetch("https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/bodies",
