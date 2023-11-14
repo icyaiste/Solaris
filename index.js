@@ -14,6 +14,9 @@ const Neptunus = document.getElementById('Neptunus');
 const solarSystem = document.getElementById('solarSystem');
 
 
+//let earthPlanet;
+//let sunStar;
+
 
 async function getPlanets() {
     try {
